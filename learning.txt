@@ -1,0 +1,31 @@
+1) create basic web based calculator application 
+2) use git to store source code and all the files .
+3) use jenkins to build and test the application .
+4) use docker for deployment.
+
+
+learning points:
+1) flask render_template directly looks into templates directory in ur application directory so dont forget to 
+   add this directory at start of project and put all html and related files into it.
+
+very basic app created .Now listing dependecies to create image.
+1) port : 5000
+2) install python and update 
+	done that 
+3) Flask
+	
+4) run app on start. 
+	
+
+expose port but dont forget to add ip address of host in python code. 
+	host means container ip address.
+
+
+
+24-08-2023
+
+now today i will integrate git repo with jenkins 
+for separate branches 
+after every commit it will check and do other things. 
+ 
+ 1) first make job with git credentials 
