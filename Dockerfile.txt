@@ -1,12 +1,9 @@
-FROM python:3.11.2
-
-
-WORKDIR /app
-
-COPY . /app
-
-RUN pip install -r requirements.txt
-
+FROM alpine:latest
+RUN apk update && apk add python3 && apk add py3-pip
+RUN adduser -D application
+USER application
+COPY --chown=application . /home/application/app
+RUN cd /home/application/app
+RUN pip install -r /home/application/app/requirements.txt
 EXPOSE 5000
-
-CMD ["python","calc.py"]
+CMD ["python3","/home/application/app/calc.py"]
