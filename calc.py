@@ -23,7 +23,7 @@ def index():
         elif operator == 'divide':
             result = float(num1 / num2)
         else :
-            result = "invaid operator"
+            result = "invalid operator"
             return render_template('calculator.html',result=result)
     return render_template('calculator.html',result=result)
 
